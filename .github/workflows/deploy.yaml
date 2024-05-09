@@ -27,7 +27,7 @@ jobs:
           USERNAME: masturrh
         run: |
             sudo docker build -t $USERNAME/$IMAGE_NAME:$VERSION .
-            sudo docker push $USERNAME/$IMAGE_NAME:$VERSION
+            docker push $USERNAME/$IMAGE_NAME:$VERSION
 
           
 
