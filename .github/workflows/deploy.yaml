@@ -22,12 +22,12 @@ jobs:
             password: ${{ secrets.DOCKERHUB_PASSWORD }}
       - name: "Build our code"
         env:
-          IMAGE_NAME: simplepersonal101
-          VERSION: latest
-          USERNAME: theoafactor
+          IMAGE_NAME: simplepersonal1000
+          VERSION: 1
+          USERNAME: Masturah1
         run: |
-            docker build -t $USERNAME/$IMAGE_NAME:$VERSION .
-            docker push $USERNAME/$IMAGE_NAME:$VERSION
+            sudo docker build -t $USERNAME/$IMAGE_NAME:$VERSION .
+            sudo docker push $USERNAME/$IMAGE_NAME:$VERSION
 
           
 
