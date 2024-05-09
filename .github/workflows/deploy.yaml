@@ -24,7 +24,7 @@ jobs:
         env:
           IMAGE_NAME: simplepersonal1000
           VERSION: 1
-          USERNAME: Masturah1
+          USERNAME: masturrh
         run: |
             sudo docker build -t $USERNAME/$IMAGE_NAME:$VERSION .
             sudo docker push $USERNAME/$IMAGE_NAME:$VERSION
